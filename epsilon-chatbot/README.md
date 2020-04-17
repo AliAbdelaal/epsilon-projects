@@ -21,6 +21,8 @@ from cyborg import Bot
 # if you want it to retrain, set retrain=True
 # you can choose which approach deep_learning or machine learning
 bot = Bot(retrain=False, deep_learning=True)
+# run the bot loop
+bot.run_blocking()
 ```
 
 Don't forget to create a virtual environment to run the code
