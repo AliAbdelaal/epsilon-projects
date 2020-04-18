@@ -112,9 +112,7 @@ class Cyborg:
 
     def __ml_preprocess(self, text):
         # create vector for the input text
-        text_v = np.zeros((300))
-        for word in self.__nlp(text):
-            text_v += word.vector
+        text_v = self.__nlp(text).vector
         return text_v
 
     def __ml_clf(self, text):
@@ -141,3 +139,4 @@ class Cyborg:
                 return key
         return None
     
+
